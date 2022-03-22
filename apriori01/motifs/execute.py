@@ -1,7 +1,5 @@
 
 
-from Bio import SeqIO
-from apyori import apriori
 
 
 import os
@@ -17,7 +15,9 @@ except:
     
     
     
-    
+
+from Bio import SeqIO
+from apyori import apriori   
     
 
 def readSequences(fileIn):
