@@ -4,6 +4,22 @@ from Bio import SeqIO
 from apyori import apriori
 
 
+import os
+try:
+    os.system('pip install -y apyori')
+    os.system('pip install -y biopython')
+    #os.system('pip install apyori -t .')
+    #os.system('pip install biopython -t .')
+    
+    
+except:
+    exit("Failed to install the <package_name>")
+    
+    
+    
+    
+    
+
 def readSequences(fileIn):
     listSequences = []
     for i in SeqIO.parse(fileIn, "fasta"):
