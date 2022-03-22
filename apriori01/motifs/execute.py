@@ -1,19 +1,16 @@
 
 
+import sys
+import subprocess
+
+# implement pip as a subprocess:
+subprocess.check_call([sys.executable, '-m', 'pip', 'install',
+'apyori'])
+
+subprocess.check_call([sys.executable, '-m', 'pip', 'install',
+'biopython'])
 
 
-import os
-try:
-    os.system('pip install -y apyori')
-    os.system('pip install -y biopython')
-    #os.system('pip install apyori -t .')
-    #os.system('pip install biopython -t .')
-    
-    
-except:
-    exit("Failed to install the <package_name>")
-    
-    
     
 
 from Bio import SeqIO
